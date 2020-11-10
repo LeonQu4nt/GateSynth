@@ -62,10 +62,10 @@ Alternatively, download the scripts directly and store in a shared folder.
 ## Usage
 
 Store the list of 3 qubit unitaries that need to be decomposed in an array with 3 indeces, using the third index to distinguish them. This should then be an 8x8xN array, where N is the number of unitaries to be decomposed. Run the following command to execute the decomposition:
-'''
+```
 % The array is stored in variable U. The circuit is retrieved in string format in variable str.
 str = decompose(U);
-'''
+```
 
 <!-- CONTRIBUTING -->
 ## Contributing
