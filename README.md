@@ -44,41 +44,28 @@ Of course, no one template will serve all projects since your needs may be diffe
 
 A list of commonly used resources that I find helpful are listed in the acknowledgements.
 
-### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
-
-
-
 <!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
-```
+This project is written in MATLAB R2020b, which must be installed on the local machine in order to execute the code. This is available at [MATLAB](https://uk.mathworks.com/products/get-matlab.html?s_tid=gn_getml).
 
 ### Installation
 
-Clone the repo
+Run the following command in order to clone the repo to the desired location.
 ```sh
 git clone https://github.com/LeonQu4nt/GateSynth.git
 ```
 
+Alternatively, download the scripts directly and store in a shared folder.
+
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+Store the list of 3 qubit unitaries that need to be decomposed in an array with 3 indeces, using the third index to distinguish them. This should then be an 8x8xN array, where N is the number of unitaries to be decomposed. Run the following command to execute the decomposition:
+'''
+% The array is stored in variable U. The circuit is retrieved in string format in variable str.
+str = decompose(U);
+'''
 
 <!-- CONTRIBUTING -->
 ## Contributing
